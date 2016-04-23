@@ -19,7 +19,7 @@ namespace ConsoleApplication1
             //Making functions
             //Sum(7, 3);
 
-            //Exception handling
+            //Exception handling practice
             //String errorMessage;
             //try
             //{
@@ -38,8 +38,19 @@ namespace ConsoleApplication1
             //    throw new Exception("Division by zero is ont allowed.", dEx.InnerException);
             //}
 
+            int intValue = 32;
+            object objValue = intValue;
+            string strValue;
+            try
+            {
+                strValue = (string)objValue;
+            }
+            catch(InvalidCastException e)
+            {
+                String errorMessage = e.Message;
+                Console.WriteLine(errorMessage);
+            }
 
-            
         }
 
         static void Sum(int first, int second)
