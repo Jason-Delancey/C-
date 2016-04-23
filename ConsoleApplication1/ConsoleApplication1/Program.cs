@@ -18,9 +18,20 @@ namespace ConsoleApplication1
 
             //Sum(7, 3);
 
-            Animal newAnimal = new Animal();
-            newAnimal.setAge(16);
-            Console.WriteLine(newAnimal.getAge());
+            //Exception handling
+            String errorMessage;
+            try
+            {
+                Animal newAnimal = new Animal();
+                newAnimal.setAge(16);
+                Console.WriteLine(newAnimal.getAge());
+            }
+            catch(Exception e)
+            {
+                errorMessage = e.Message;
+                Console.WriteLine(errorMessage);
+            }
+            
         }
 
         static void Sum(int first, int second)
