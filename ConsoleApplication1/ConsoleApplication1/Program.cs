@@ -16,7 +16,11 @@ namespace ConsoleApplication1
             //    Console.WriteLine(i);
             //}
 
-            Sum(7, 3);
+            //Sum(7, 3);
+
+            Animal newAnimal = new Animal();
+            newAnimal.setAge(16);
+            Console.WriteLine(newAnimal.getAge());
         }
 
         static void Sum(int first, int second)
