@@ -16,21 +16,29 @@ namespace ConsoleApplication1
             //    Console.WriteLine(i);
             //}
 
+            //Making functions
             //Sum(7, 3);
 
             //Exception handling
-            String errorMessage;
-            try
-            {
-                Animal newAnimal = new Animal();
-                newAnimal.setAge(16);
-                Console.WriteLine(newAnimal.getAge());
-            }
-            catch(Exception e)
-            {
-                errorMessage = e.Message;
-                Console.WriteLine(errorMessage);
-            }
+            //String errorMessage;
+            //try
+            //{
+            //    Animal newAnimal = new Animal();
+            //    newAnimal.setAge(16);
+            //    Console.WriteLine(newAnimal.getAge());
+            //}
+            //catch(Exception e)
+            //{
+            //    errorMessage = e.Message;
+            //    Console.WriteLine(errorMessage);
+            //}
+            //How to throw an exception back up the call stack:
+            //catch(DivideByZeroException dEx)
+            //{
+            //    throw new Exception("Division by zero is ont allowed.", dEx.InnerException);
+            //}
+
+
             
         }
 
