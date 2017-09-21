@@ -1,2 +1,1 @@
-# C
-Learning C#, C, and C++
+Learning C#
